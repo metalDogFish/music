@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 2px solid #333;
+}
+     
+   h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+.frameGrowth{
+border-style:none;
+  transition:border-style 0.3s;
+}
+.frameGrowth:hover {
+  /* width: 300px; */
+  
+  border-style: dotted;
+}
+.frameGrowth .hoverText {
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: right;
+  padding: 10px 40px;
+}
+.frameGrowth:hover .hoverText {
+  opacity: 1;  
+}
+section {
+  margin: 20px 0; /* Reduced margin for better alignment */
+  width: 100%;
+  max-width: 800px; /* Optional: limits width for better layout */
+  padding: 0 20px;
+}
+#peace-image {
+  transform: rotate(180deg);
+  
+}
+#project-image{
+  /*resize image-set only one dimension, height will match to preserve ratio*/
+  /*add hover effect? */
+width:200px;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0; 
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project_a {
+    margin-right: 15px;
+    color: #0066cc;
+}
+.project_b {
+   padding-left: 20px; 
+    margin-left: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    <!-- color: #0066cc; -->
+}
+    canvas {
+  display: block;
+}
